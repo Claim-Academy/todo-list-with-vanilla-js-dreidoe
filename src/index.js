@@ -14,9 +14,14 @@ function createNewToDo(info) {
     <li>${info.id} </li>
     <li>${info.title}</li>
     <li>${info.completed}</li>
+    </section>
 
     `
 }
+
+const completeToDoHTML = info.map(createNewToDo).join(" ");
+
+root.innerHTML =completeToDoHTML;
 
 
 
