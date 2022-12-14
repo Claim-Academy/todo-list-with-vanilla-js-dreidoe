@@ -14,6 +14,7 @@ function createNewToDo(info) {
     <li>${info.id} </li>
     <li>${info.title}</li>
     <li>${info.completed}</li>
+    </ul>
     </section>
 
     `
