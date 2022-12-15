@@ -5,9 +5,9 @@ console.log(root);
 const toDoList = await fetch("https://jsonplaceholder.typicode.com/todos");
 const info = await toDoList.json();
 const search = document.querySelector("input");
+const completeToDoHTML = info.map(createNewToDo).join(" ");
 
-console.log(info);
-// function declaration/expressions
+
 function createNewToDo(info) {
     return`<section class="bg-red-900 text-white p-6  min-w-min rounded-md">
     <h2 class="text-2xl font-semibold my-2">${info.userId}</h2>
