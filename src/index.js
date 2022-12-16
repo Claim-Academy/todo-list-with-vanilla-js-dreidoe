@@ -33,7 +33,7 @@ root.innerHTML=` <div>
   `;
 root.classList.add( "container", "mx-auto", "grid", "grid-cols-3", "gap-4");
 
-const completeToDoHTML = info.map(createNewToDo).join(" ");
+
 
 root.innerHTML =completeToDoHTML;
 
